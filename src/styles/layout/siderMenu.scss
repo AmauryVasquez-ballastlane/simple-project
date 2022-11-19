@@ -1,0 +1,23 @@
+@import '../animation';
+
+.siderMenu {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  gap: 20px;
+  font-weight: 500;
+
+  a {
+  }
+}
+
+.isHidden {
+  display: none;
+}
+
+.willFade {
+  border: 1px solid red;
+  @include fadeOut();
+}

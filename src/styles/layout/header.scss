@@ -1,0 +1,17 @@
+header.header {
+  margin: 0 auto;
+  width: 100%;
+  background: var(--blue);
+  height: 60px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}

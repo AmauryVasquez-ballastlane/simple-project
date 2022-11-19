@@ -1,0 +1,16 @@
+div.sider {
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding: 5px 10px 30px;
+}
+
+div.expanded {
+  border: 1px solid #1ea7fd;
+}
