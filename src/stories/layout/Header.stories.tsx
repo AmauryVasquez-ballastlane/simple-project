@@ -7,4 +7,14 @@ export default {
   component: Header,
 } as ComponentMeta<typeof Header>;
 
-export const Template: ComponentStory<typeof Header> = () => <Header />;
+const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
+
+export const PlainHeader = Template.bind({});
+PlainHeader.args = {
+  fill: false,
+};
+
+export const FilledHeader = Template.bind({});
+FilledHeader.args = {
+  fill: true,
+};

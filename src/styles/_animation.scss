@@ -1,3 +1,18 @@
+@keyframes fadeInKeyframes {
+  from {
+    filter: blur(5px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@mixin fadeIn($time: 1s) {
+  animation: $time fadeInKeyframes ease;
+}
+
 @keyframes fadeOutKeyframes {
   from {
     filter: blur(0);
@@ -11,4 +26,16 @@
 
 @mixin fadeOut($time: 0.5s) {
   animation: $time fadeOutKeyframes ease;
+}
+
+@mixin appearFromLeft($time: 0.5s, $start: -300px, $end: 0px) {
+  @keyframes leftToRight {
+    from {
+      left: $start;
+    }
+    to {
+      right: $end;
+    }
+  }
+  animation: $time leftToRight ease;
 }

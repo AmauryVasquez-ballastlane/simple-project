@@ -6,7 +6,7 @@ export const Layout = (props: { children?: JSX.Element }) => {
 
   return (
     <div className="layout">
-      <Header />
+      <Header fill />
       <Sider />
       {children}
     </div>
